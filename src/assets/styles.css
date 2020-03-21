@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src:
+        url("https://rsms.me/inter/inter.css");
+}
