@@ -12,10 +12,10 @@
 
                     <section class="invisible container mx-auto">
                         <div class="md:visible sm:invisible">
-                            <form class="container mx-auto" @submit.prevent>
+                            <form class="container mx-auto" @submit="addSubscriber">
                                 <div>
                                     <div class="flex shadow-lg md:w-2/3 lg:w-1/2 xl:w-2/5 p-1 rounded-full overflow-hidden mx-auto bg-white">
-                                        <input type="text" name="" id="email" v-model.trim="newSubscriber.email" placeholder="Enter your mail" class="h-16 text-gray-700 w-64 flex-1 px-8 text-lg focus:outline-none" autofocus>
+                                        <input type="text" name="" id="email" v-model.trim="email" placeholder="Enter your mail" class="h-16 text-gray-700 w-64 flex-1 px-8 text-lg focus:outline-none" autofocus>
                                         <button @click="addSubscriber" class="bg-blue-700 w-32 font-bold text-secondary rounded-full">Subscribe</button>
                                     </div>
                                 </div>
@@ -43,25 +43,32 @@
 </template>
 
 <script>
-import subscribers from '../../config';
+import axios from 'axios';
 // import Footer from './components/Footer.vue'
 
 export default {
   name: 'HeroPage',
-    firebase: {
-        subscribers: subscribers
-    },
   data(){
-      return{
-          newSubscriber: {
-              email:''
-          }
+      return {
+        //   newSubscriber: {
+        //       email:'',
+        //       telephone:''
+        //   }
+        email: '',
+        telephone: '',
       }
   },
   methods: {
-      addSubscriber() {
-          subscribers.add(this.newSubscriber);
-            this.newSubscriber.email = '';
+      addSubscriber(e) {
+          e.preventDefault();
+        //   subscribers.add(this.newSubscriber);
+        //     this.newSubscriber.email = '';
+        axios.post('https://cors-anywhere.herokuapp.com/https://ghana-covid-19-info-system-backend.netlify.com/.netlify/functions/add-subscriber', {
+            email: this.email,
+            telephone: this.telephone
+        })
+        .then(response => (console.log(response.data)))
+        .catch(error => (console.log(error)))
       },
       printButton() {
           alert('button clicked')
