@@ -1,43 +1,23 @@
 <template>
-    <div id="heropage" class="mx-auto">
-        <div class="text-white">
         <Section class="container mx-auto p-2 justify-center">
             <div class="mx-auto lg:justify-start md:pt-10">
                 <div class="text-center mx-auto">
-                    <h2 class="mt-2 text-3xl font-bold text-gray-900 lg:text-6xl sm:text-4xl">Ghana Health Service Corona Virus <br class="sm:hidden"> (COVID-19) Updates</h2>
-                    
-                    <p class="mt-2 max-w-2xl text-base sm:text-lg lg:text-xl text-gray-600 lg:mx-auto md:mb-12">
-                        Subscribe to get COVID-19 Information delivered right to you from <br class="lg:hidden"> Ghana Health Service.
-                    </p>
+                    <div class="mb-10 sm:mb-24">
+                        <h2 class="mt-4 text-3xl font-bold text-gray-900 lg:text-6xl sm:text-4xl">Ghana Health Service Corona Virus <br class="sm:hidden"> (COVID-19) Updates</h2>
+                        <p class="mt-2 w-full sm:w-2/3 text-base sm:text-lg lg:text-xl text-gray-600 mx-auto">
+                            Subscribe to get COVID-19 Information delivered right to you from <br class="hidden lg:block"> Ghana Health Service.
+                        </p>
+                    </div>
 
-                    <section class="invisible container mx-auto">
-                        <div class="md:visible sm:invisible">
-                            <div class="container mx-auto">
-                                <div class="flex md:w-2/3 lg:w-1/2 xl:w-2/5 p-1 overflow-hidden mx-auto bg-white">
-                                    <input type="email" v-model.trim="email" placeholder="Enter your email here" class="rounded-l-md h-16 sm:h-20 text-gray-700 w-64 flex-1 px-8 text-lg focus:outline-none border-2 border-gray-300 placeholder-gray-500" autofocus>
-                                    <button @click="addSubscriber" class="bg-blue-700 w-32 font-bold text-secondary rounded-r-md">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section> 
-                        <div class="flex items-center justify-center mb-12">
-                            <div class="w-full max-w-md">
-                                <section class="flex items-center justify-center w-full">
-                                    <div class="text-gray-600 lg:invisible md:invisible sm:visible">
-                                        <input type="email" v-model.trim="email" class="rounded-md p-4 text-gray-800 bg-white w-full border border-gray-300 placeholder-gray-500" placeholder="Enter your email here" autofocus/>
-                                        <button class="bg-blue-700 text-white p-4 rounded-md w-full mt-4" @click="addSubscriber">Subscribe</button>
-                                    </div>
-                                </section>
-                            </div>
+                    <section class="container mx-auto my-4 sm:my-10">
+                        <div class="w-full sm:w-2/3 lg:w-1/3 mx-auto">
+                            <input type="email" v-model.trim="email" class="sm:h-16 sm:text-xl rounded-md p-4 text-gray-800 bg-white w-full border-2 border-gray-300 placeholder-gray-500" placeholder="Enter your email here" autofocus/>
+                            <button class="mt-2 lg:mt-6 bg-blue-700 text-white p-4 rounded-md w-full mt-4 sm:text-xl" @click="addSubscriber">Subscribe</button>
                         </div>
                     </section>
                     </div>
                 </div>
-            </Section>
-        </div>
-    </div>  
+            </Section> 
 </template>
 
 <script>

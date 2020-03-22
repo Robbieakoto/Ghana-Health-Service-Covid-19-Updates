@@ -1,16 +1,19 @@
 <template>
-  <div id="app">   
-    <home/>
+   <div id="app" class="container mx-auto p-4">   
+    <hero-page/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Home from '@/views/Home.vue'
+import HeroPage from '@/components/HeroPage.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-   Home
+   Footer,
+    HeroPage
   },
   metaInfo: {
     // Children can override the title.
