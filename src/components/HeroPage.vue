@@ -44,16 +44,11 @@
 
 <script>
 import axios from 'axios';
-// import Footer from './components/Footer.vue'
 
 export default {
   name: 'HeroPage',
   data(){
       return {
-        //   newSubscriber: {
-        //       email:'',
-        //       telephone:''
-        //   }
         email: '',
         telephone: '',
       }
@@ -61,8 +56,6 @@ export default {
   methods: {
       addSubscriber(e) {
           e.preventDefault();
-        //   subscribers.add(this.newSubscriber);
-        //     this.newSubscriber.email = '';
         axios.post('https://cors-anywhere.herokuapp.com/https://ghana-covid-19-info-system-backend.netlify.com/.netlify/functions/add-subscriber', {
             email: this.email,
             telephone: this.telephone
@@ -70,9 +63,9 @@ export default {
         .then(response => (console.log(response.data)))
         .catch(error => (console.log(error)))
       },
-      printButton() {
-          alert('button clicked')
-      }
+    //   printButton() {
+    //       alert('button clicked')
+    //   }
   }
 }
 </script>
