@@ -4,10 +4,10 @@
         <Section class="container mx-auto p-2 justify-center">
             <div class="mx-auto leading-tight lg:justify-start md:pt-10">
                 <div class="text-center mx-auto">
-                    <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Don't miss out on the news! Stay Healthy always!</h2>
+                    <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Ghana Health Service Corona Virus(COVID-19) Updates</h2>
                     
                     <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto md:mb-12">
-                        Get updates on the latest news about Corona Virus.
+                        Sign Up to get COVID-19 Information / Updates delivered right to you from Ghana Health Service Website. Don't miss out on the news!
                     </p>
 
                     <section class="invisible container mx-auto">

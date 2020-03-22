@@ -2,23 +2,23 @@
   <div id="footer">
     <div>
       <section class="container mx-auto p-2 justify-center">
-            <p class="text-3xl text-gray-700 text-center mb-12">Spread the word</p>
+            <p class="text-3xl text-gray-700 text-center mb-12">Spread the word: </p>
             <div class="flex items-center justify-center flex-wrap mb-12">
                 <div class="m-3">
-                    <button class="text-white font-semibold py-2 px-4 border border-blue rounded py-4 px-6 inline-flex items-center">
+                    <a class="text-white font-semibold py-2 px-4 border border-blue rounded py-4 px-6 inline-flex items-center">
                     <img
                         src="../assets/images/facebook.png"
                         alt="Visa Logo"
                         class="h-6 w-auto mr-4"
                     />
                     <span class="mr-2 text-gray-700">Share</span>
-                    </button>
+                    </a>
                 </div>
                 
                 <div class="m-3">
                     <button class="text-white font-semibold py-2 px-4 border border-red rounded py-4 px-6 inline-flex items-center">
                     <img
-                        src="../assets/images/instagram.svg"
+                        src="../assets/images/linkedln.png"
                         alt="Visa Logo"
                         class="h-6 w-auto mr-4"
                     />
