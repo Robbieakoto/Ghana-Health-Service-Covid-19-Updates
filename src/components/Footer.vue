@@ -2,39 +2,39 @@
   <div id="footer">
     <div>
       <section class="container mx-auto p-2 justify-center">
-            <p class="text-3xl text-gray-700 text-center mb-12">Spread the word: </p>
+            <p class="text-xl text-gray-700 text-center mb-4">Spread the word: </p>
             <div class="flex items-center justify-center flex-wrap mb-12">
-                <div class="m-3">
-                    <a class="text-white font-semibold py-2 px-4 border border-blue rounded py-4 px-6 inline-flex items-center">
+                <div class="m-2">
+                    <a class="text-white font-semibold py-2 px-4 border border-blue rounded inline-flex items-center">
                     <img
                         src="../assets/images/facebook.png"
                         alt="Visa Logo"
-                        class="h-6 w-auto mr-4"
+                        class="h-4 w-auto mr-2"
                     />
-                    <span class="mr-2 text-gray-700">Share</span>
+                    <span class="text-gray-700">Share</span>
                     </a>
                 </div>
                 
-                <div class="m-3">
-                    <button class="text-white font-semibold py-2 px-4 border border-red rounded py-4 px-6 inline-flex items-center">
+                <div class="m-2">
+                    <button class="text-white font-semibold py-2 px-4 border border-red rounded inline-flex items-center">
                     <img
                         src="../assets/images/linkedln.png"
                         alt="Visa Logo"
-                        class="h-6 w-auto mr-4"
+                        class="h-4 w-auto mr-2"
                     />
-                    <span class="mr-2 text-gray-700">Share</span>
+                    <span class="text-gray-700">Share</span>
                     <path fill="currentcolor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
                     </button>
                 </div>
                 
-                <div class="m-3">
-                    <button class="text-white font-semibold py-2 px-4 border border-blue rounded py-4 px-6 inline-flex items-center">
+                <div class="m-2">
+                    <button class="text-white font-semibold py-2 px-4 border border-blue rounded inline-flex items-center">
                     <img
                         src="../assets/images/twitter.png"
                         alt="Visa Logo"
-                        class="h-6 w-auto mr-4"
+                        class="h-4 w-auto mr-2"
                     />
-                    <span class="mr-2 text-gray-700">Tweet</span>
+                    <span class="text-gray-700">Tweet</span>
                     <path fill="currentcolor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
                     </button>
                 </div>
